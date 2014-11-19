@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Angular Exercise 5</title>
-<script src="bower_components/angular/angular.js"></script>
-</head>
-<body>
+<html lang="en" ng-app="Users">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Exercise 5</title>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+  <body>
+    <div ng-controller="UserCtrl">
+      <ul> Users:
+        <li ng-repeat="user in users">{{user.first_name}}</li>
+      </ul>  
+      <ul> Titles:
+        <li ng-repeat="title in titles">{{title.name}}</li>
+      </ul>
+    </div>
 
-<p>Create a list of titles using data from the API</p>
-
-</body>
+    <p>Create a list of titles using data from the API</p>
+  </body>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/UserController.js"></script>
 </html>

@@ -3,14 +3,14 @@ angular.module('Demo', []);
 
 // main controller
 angular.module('Demo').controller('MainCtrl', function($scope) {
-    'use strict';
+  'use strict';
 
     // basic scope properties
     $scope.greeting = 'Hello';
 
     $scope.person = {
-        firstName: 'Dan',
-        lastName: 'Johnson'
+      firstName: 'Dan',
+      lastName: 'Johnson'
     };
 
     // update scope properties using $watch
@@ -22,16 +22,16 @@ angular.module('Demo').controller('MainCtrl', function($scope) {
     $scope.$watch('favColor', function(newValue, oldValue) {
     	switch (newValue) {
     		case 'red':
-    			$scope.favFruits = redFruits;
-    			break;
+          $scope.favFruits = redFruits;
+          break;
 
-    		case 'green':
-    			$scope.favFruits = greenFruits;
-    			break;
+        case 'green':
+          $scope.favFruits = greenFruits;
+          break;
 
-    		default:
-    			$scope.favFruits = [];
-    			break;
-    	}
-    });
+        default:
+          $scope.favFruits = [];
+          break;
+     }
+  });
 });

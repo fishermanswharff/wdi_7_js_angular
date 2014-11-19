@@ -19,9 +19,9 @@ angular.module('Demo').config(function($routeProvider) {
 });
 
 angular.module('Demo').controller('NavbarCtrl', function($scope, $location) {
-    'use strict';
+  'use strict';
 
-    $scope.isActive = function(viewLocation) {
-        return viewLocation === $location.path();
-    };
+  $scope.isActive = function(viewLocation) {
+      return viewLocation === $location.path();
+  };
 });

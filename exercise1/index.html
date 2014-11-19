@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Angular Exercise 1</title>
-<script src="bower_components/angular/angular.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Exercise 1</title>
+    <script src="bower_components/angular/angular.js"></script>
+    </head>
+  <body ng-app>
 
-<p>Create a simple calulator that allows you to add two numbers (hint you may need to use number inputs)</p>
-
-</body>
+    <p>Create a simple calulator that allows you to add two numbers (hint you may need to use number inputs)</p>
+    <div class="calc">
+      <input type="number" ng-model="num1">
+      <input type="number" ng-model="num2">
+    </div>
+    <h2>{{num1 + num2}}</h2>
+  </body>
 </html>
